@@ -36,3 +36,4 @@ Things you may want to cover:
   - RSpec
   - FactoryBot
   - Faker
+  - Shoulda Matchers
