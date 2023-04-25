@@ -33,3 +33,5 @@ Things you may want to cover:
 * Gems installed
   - Rubocop
   - Devise
+  - RSpec
+  - FactoryBot
