@@ -1,10 +1,12 @@
 require: rubocop-rails
 
 Style/Documentation:
+  Enabled: false
+
+Layout/LineLength:
   Exclude:
-    - app/helpers/application_helper.rb
-    - app/mailers/application_mailer.rb
-    - app/models/application_record.rb
-    - config/application.rb
-    - test/application_system_test_case.rb
-    - test/test_helper.rb
+    - config/initializers/devise.rb
+
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/20230425180830_devise_create_users.rb
