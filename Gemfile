@@ -8,11 +8,13 @@ ruby '3.1.1'
 gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
 
 gem 'bootsnap', require: false
+gem 'byebug', '~> 11.1', '>= 11.1.2'
 gem 'devise', '~> 4.9', '>= 4.9.2'
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'puma', '~> 5.0'
 gem 'redis', '~> 4.0'
+gem 'rubocop-rails', '~> 2.18'
 gem 'sprockets-rails'
 gem 'sqlite3', '~> 1.4'
 gem 'stimulus-rails'
