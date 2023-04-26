@@ -1,17 +1,7 @@
+<%= render 'form', page: @page %>
+
+<%= turbo_stream_from(:pages) %>
 <h1>Scrape history</h1>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Links</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @pages.each do |page| %>
-      <tr>
-        <td><a href='<%= page_path(page.id) %>'><%= page.name %></a></td>
-        <td><%= page.links.size %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<%= turbo_frame_tag 'pages_list' do %>
+  <% render 'table_body', pages: @pages %>
+<% end %>

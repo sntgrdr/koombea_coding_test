@@ -46,3 +46,4 @@ Things you may want to cover:
   - simplecov
   - Sidekiq
   - Rails Controller Testing
+  - Turbo Rails

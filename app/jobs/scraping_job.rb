@@ -8,7 +8,7 @@ class ScrapingJob < ApplicationJob
 
   def perform(html, user)
     doc = Nokogiri::HTML(html)
-    Page.create!(create_payload(user.id, doc))
+    Page.create!(create_payload(user, doc))
   rescue StandardError => e
     Rails.logger.error("ScrapingJob failed with error: #{e.message}")
     raise e
@@ -16,8 +16,8 @@ class ScrapingJob < ApplicationJob
 
   private
 
-  def create_payload(user_id, doc)
+  def create_payload(user, doc)
     links = doc.css('a').map { |link| { href: link.attr('href'), text: link.text } }
-    { name: doc.title, links: links.as_json, user_id: }
+    { name: doc.title, links: links.as_json, user: }
   end
 end

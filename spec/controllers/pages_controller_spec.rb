@@ -33,7 +33,6 @@ RSpec.describe PagesController, type: :controller do
       it 'enqueues a scraping job and redirects to the index page' do
         expect { subject }.to have_enqueued_job(ScrapingJob)
         expect(response).to redirect_to(pages_path)
-        expect(flash[:notice]).to eq('The page is being processed. Results will be available soon.')
       end
     end
 

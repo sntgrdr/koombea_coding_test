@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-04-26T05:50:37-03:00">2023-04-26T05:50:37-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-04-26T15:49:39-03:00">2023-04-26T15:49:39-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  98.79%
+  98.81%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.25
+         2.28
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>248</b> relevant lines,
-    <span class="green"><b>245</b> lines covered</span> and
+    <b>253</b> relevant lines,
+    <span class="green"><b>250</b> lines covered</span> and
     <span class="red"><b>3</b> lines missed. </span>
     (<span class="green">
-  98.79%
+  98.81%
 </span>
 )
   </div>
@@ -150,11 +150,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c569aab8b17c26f77c08ae3e60be8c17051a5b52" class="src_link" title="app/models/page.rb">app/models/page.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">9</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.25</td>
+            <td class="cell--number">2.75</td>
             
           </tr>
         
@@ -282,9 +282,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#17cf98b5810dbcbeb57fbe0fdc50c0932eb1cc90" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">9</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">6</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -293,11 +293,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#1a5ce0c3a608f65d1568d51e652a0ce1293562cd" class="src_link" title="spec/controllers/pages_controller_spec.rb">spec/controllers/pages_controller_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">68</td>
-            <td class="cell--number">41</td>
-            <td class="cell--number">41</td>
+            <td class="cell--number">67</td>
+            <td class="cell--number">40</td>
+            <td class="cell--number">40</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.39</td>
+            <td class="cell--number">1.40</td>
             
           </tr>
         
@@ -743,7 +743,7 @@
 
             
 
-            <code class="ruby">    redirect_to pages_path, notice: &#39;The page is being processed. Results will be available soon.&#39;</code>
+            <code class="ruby">    redirect_to pages_path</code>
           </li>
         </div>
       
@@ -930,7 +930,7 @@
 
             
 
-            <code class="ruby">    @page = Page.find_by(id: params[:id])</code>
+            <code class="ruby">    @page = Page.find_by!(id: params[:id])</code>
           </li>
         </div>
       
@@ -1309,7 +1309,7 @@
 
             
 
-            <code class="ruby">    Page.create!(create_payload(user.id, doc))</code>
+            <code class="ruby">    Page.create!(create_payload(user, doc))</code>
           </li>
         </div>
       
@@ -1397,7 +1397,7 @@
 
             
 
-            <code class="ruby">  def create_payload(user_id, doc)</code>
+            <code class="ruby">  def create_payload(user, doc)</code>
           </li>
         </div>
       
@@ -1419,7 +1419,7 @@
 
             
 
-            <code class="ruby">    { name: doc.title, links: links.as_json, user_id: }</code>
+            <code class="ruby">    { name: doc.title, links: links.as_json, user: }</code>
           </li>
         </div>
       
@@ -1550,8 +1550,8 @@
     
 
     <div class="t-line-summary">
-      <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>8</b> relevant lines.
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1618,8 +1618,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="6">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="9" data-linenumber="6">
+            <span class="hits">9</span>
             
 
             
@@ -1652,6 +1652,105 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  after_create_commit :broadcast_new_message</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def broadcast_new_message</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="15">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    broadcast_replace_to :pages, target: :pages_list, partial: &#39;pages/table_body&#39;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">                                 locals: { pages: user.pages.newest_first }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 
@@ -7554,8 +7653,8 @@
     
 
     <div class="t-line-summary">
-      <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>6</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -7611,13 +7710,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  require &#39;sidekiq/web&#39;</code>
           </li>
         </div>
       
@@ -7628,7 +7727,7 @@
 
             
 
-            <code class="ruby">  resources :pages, only: %i[new create show index]</code>
+            <code class="ruby">  mount Sidekiq::Web =&gt; &#39;/sidekiq&#39;</code>
           </li>
         </div>
       
@@ -7650,12 +7749,34 @@
 
             
 
-            <code class="ruby">  root &#39;home#index&#39;</code>
+            <code class="ruby">  resources :pages, only: %i[new create show index]</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  root &#39;home#index&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
             
             
 
@@ -7684,8 +7805,8 @@
     
 
     <div class="t-line-summary">
-      <b>41</b> relevant lines.
-      <span class="green"><b>41</b> lines covered</span> and
+      <b>40</b> relevant lines.
+      <span class="green"><b>40</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -8082,13 +8203,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="36">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="36">
+            
             
 
             
 
-            <code class="ruby">        expect(flash[:notice]).to eq(&#39;The page is being processed. Results will be available soon.&#39;)</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -8099,7 +8220,7 @@
 
             
 
-            <code class="ruby">      end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -8110,23 +8231,12 @@
 
             
 
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="39">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="40">
+          <li class="covered" data-hits="1" data-linenumber="39">
             <span class="hits">1</span>
             
 
@@ -8137,7 +8247,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="41">
+          <li class="covered" data-hits="1" data-linenumber="40">
             <span class="hits">1</span>
             
 
@@ -8148,7 +8258,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="42">
+          <li class="covered" data-hits="1" data-linenumber="41">
             <span class="hits">1</span>
             
 
@@ -8159,7 +8269,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="43">
+          <li class="covered" data-hits="1" data-linenumber="42">
             <span class="hits">1</span>
             
 
@@ -8170,7 +8280,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="44">
+          <li class="covered" data-hits="1" data-linenumber="43">
             <span class="hits">1</span>
             
 
@@ -8181,7 +8291,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="45">
+          <li class="covered" data-hits="1" data-linenumber="44">
             <span class="hits">1</span>
             
 
@@ -8192,7 +8302,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="46">
+          <li class="never" data-hits="" data-linenumber="45">
             
             
 
@@ -8203,13 +8313,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="47">
+          <li class="never" data-hits="" data-linenumber="46">
             
             
 
             
 
             <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="47">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -8220,23 +8341,12 @@
 
             
 
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="49">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="50">
+          <li class="covered" data-hits="1" data-linenumber="49">
             <span class="hits">1</span>
             
 
@@ -8247,7 +8357,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="51">
+          <li class="covered" data-hits="1" data-linenumber="50">
             <span class="hits">1</span>
             
 
@@ -8258,7 +8368,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="52">
+          <li class="covered" data-hits="1" data-linenumber="51">
             <span class="hits">1</span>
             
 
@@ -8269,7 +8379,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="53">
+          <li class="covered" data-hits="1" data-linenumber="52">
             <span class="hits">1</span>
             
 
@@ -8280,7 +8390,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="54">
+          <li class="covered" data-hits="1" data-linenumber="53">
             <span class="hits">1</span>
             
 
@@ -8291,7 +8401,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="55">
+          <li class="covered" data-hits="1" data-linenumber="54">
             <span class="hits">1</span>
             
 
@@ -8302,7 +8412,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="56">
+          <li class="covered" data-hits="1" data-linenumber="55">
             <span class="hits">1</span>
             
 
@@ -8313,13 +8423,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="57">
+          <li class="never" data-hits="" data-linenumber="56">
             
             
 
             
 
             <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="57">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -8330,23 +8451,12 @@
 
             
 
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="59">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="60">
+          <li class="covered" data-hits="1" data-linenumber="59">
             <span class="hits">1</span>
             
 
@@ -8357,7 +8467,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="61">
+          <li class="covered" data-hits="1" data-linenumber="60">
             <span class="hits">1</span>
             
 
@@ -8368,7 +8478,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="62">
+          <li class="covered" data-hits="1" data-linenumber="61">
             <span class="hits">1</span>
             
 
@@ -8379,7 +8489,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="63">
+          <li class="covered" data-hits="1" data-linenumber="62">
             <span class="hits">1</span>
             
 
@@ -8390,7 +8500,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="64">
+          <li class="covered" data-hits="1" data-linenumber="63">
             <span class="hits">1</span>
             
 
@@ -8401,7 +8511,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="65">
+          <li class="covered" data-hits="1" data-linenumber="64">
             <span class="hits">1</span>
             
 
@@ -8412,7 +8522,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="66">
+          <li class="never" data-hits="" data-linenumber="65">
             
             
 
@@ -8423,7 +8533,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="67">
+          <li class="never" data-hits="" data-linenumber="66">
             
             
 
@@ -8434,7 +8544,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="68">
+          <li class="never" data-hits="" data-linenumber="67">
             
             
 

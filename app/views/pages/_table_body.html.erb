@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Links</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% pages.each do |page| %>
+      <tr>
+        <td><%= link_to page.name, page_path(page) %></td>
+        <td><%= page.links.size %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

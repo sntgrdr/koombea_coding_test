@@ -1,17 +1,19 @@
-<h1><%= @page.name %></h1>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Link</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @page.links.each do |link| %>
+<%= turbo_frame_tag 'pages_list' do %>
+  <h1><%= @page.name %></h1>
+  <table>
+    <thead>
       <tr>
-        <td><%= link['text'].present? ? link['text'] : 'No Name' %></td>
-        <td><%= link['href'] %></td>
+        <th>Name</th>
+        <th>Link</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <% @page.links.each do |link| %>
+        <tr>
+          <td><%= link['text'].present? ? link['text'] : 'No Name' %></td>
+          <td><%= link['href'] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
