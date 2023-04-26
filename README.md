@@ -37,3 +37,4 @@ Things you may want to cover:
   - FactoryBot
   - Faker
   - Shoulda Matchers
+  - simplecov
