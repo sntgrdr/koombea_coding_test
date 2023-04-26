@@ -3,6 +3,16 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+  describe '#associations' do
+    it { should have_many(:pages).dependent(:destroy) }
+
+    it "destroy all users's pages" do
+      user = build(:user, :with_pages)
+      user_pages = user.pages.size
+      expect { user.destroy! }.to change(Page, :count).from(user_pages).to(0)
+    end
+  end
+
   describe '#validations' do
     it { should validate_presence_of(:email) }
     it { should validate_presence_of(:password) }

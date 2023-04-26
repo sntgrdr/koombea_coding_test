@@ -1,0 +1,9 @@
+<%= form_tag pages_path do %>
+
+  <div class="field">
+    <%= label_tag :url %>
+    <%= text_field_tag :url %>
+  </div>
+
+  <%= submit_tag "Scrape" %>
+<% end %>

@@ -10,3 +10,10 @@ Layout/LineLength:
 Metrics/MethodLength:
   Exclude:
     - db/migrate/20230425180830_devise_create_users.rb
+    - spec/models/*
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/models/*
+    - config/environments/*
+    - spec/controllers/*
