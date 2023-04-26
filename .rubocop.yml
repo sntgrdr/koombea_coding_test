@@ -15,3 +15,5 @@ Metrics/MethodLength:
 Metrics/BlockLength:
   Exclude:
     - spec/models/*
+    - config/environments/*
+    - spec/controllers/*

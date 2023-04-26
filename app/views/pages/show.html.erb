@@ -1,0 +1,17 @@
+<h1><%= @page.name %></h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @page.links.each do |link| %>
+      <tr>
+        <td><%= link['text'].present? ? link['text'] : 'No Name' %></td>
+        <td><%= link['href'] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

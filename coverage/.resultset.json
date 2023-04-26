@@ -1,34 +1,74 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/santirodriguez/Documents/koombea_coding_test/spec/devise/sign_in_spec.rb": {
+      "/Users/santirodriguez/Documents/koombea_coding_test/spec/controllers/pages_controller_spec.rb": {
         "lines": [
           null,
           null,
           1,
           null,
           1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          7,
+          null,
+          1,
+          6,
+          null,
+          null,
+          1,
           3,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          3,
+          null,
+          1,
+          1,
           2,
+          1,
+          1,
+          null,
+          null,
           null,
           1,
           1,
           1,
           1,
           1,
-          null,
-          1,
           1,
           null,
           null,
+          null,
+          null,
+          1,
+          1,
           1,
           1,
           1,
           1,
           1,
           null,
+          null,
+          null,
           1,
           1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null,
           null
         ]
@@ -43,6 +83,7 @@
           1,
           1,
           null,
+          1,
           1,
           1,
           null,
@@ -69,6 +110,7 @@
           1,
           null,
           0,
+          null,
           null,
           1,
           null,
@@ -135,8 +177,6 @@
           1,
           null,
           1,
-          null,
-          null,
           null,
           1,
           null,
@@ -234,6 +274,7 @@
           null,
           null,
           null,
+          1,
           null
         ]
       },
@@ -659,8 +700,8 @@
           null,
           1,
           1,
-          4,
-          4,
+          7,
+          7,
           null,
           null
         ]
@@ -671,8 +712,8 @@
           null,
           1,
           1,
-          7,
-          7,
+          15,
+          15,
           null,
           1,
           1,
@@ -727,6 +768,82 @@
           null
         ]
       },
+      "/Users/santirodriguez/Documents/koombea_coding_test/app/controllers/pages_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/santirodriguez/Documents/koombea_coding_test/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/santirodriguez/Documents/koombea_coding_test/spec/devise/sign_in_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          3,
+          2,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/santirodriguez/Documents/koombea_coding_test/spec/devise/sign_up_spec.rb": {
         "lines": [
           null,
@@ -751,6 +868,84 @@
           null
         ]
       },
+      "/Users/santirodriguez/Documents/koombea_coding_test/spec/jobs/scraping_job_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          3,
+          2,
+          null,
+          2,
+          null,
+          1,
+          1,
+          2,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          1,
+          1,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/santirodriguez/Documents/koombea_coding_test/app/jobs/scraping_job.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          228,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/santirodriguez/Documents/koombea_coding_test/app/jobs/application_job.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/santirodriguez/Documents/koombea_coding_test/spec/models/page_spec.rb": {
         "lines": [
           null,
@@ -771,7 +966,7 @@
           1,
           1,
           null,
-          1,
+          2,
           null,
           1,
           null
@@ -817,14 +1012,6 @@
           null
         ]
       },
-      "/Users/santirodriguez/Documents/koombea_coding_test/app/controllers/application_controller.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null
-        ]
-      },
       "/Users/santirodriguez/Documents/koombea_coding_test/app/controllers/home_controller.rb": {
         "lines": [
           null,
@@ -835,6 +1022,6 @@
         ]
       }
     },
-    "timestamp": 1682485098
+    "timestamp": 1682499037
   }
 }
