@@ -9,7 +9,7 @@ class PagesController < ApplicationController
     redirect_to pages_path
   rescue StandardError => e
     flash[:error] = "There was an error processing the page: #{e.message}"
-    render :new
+    render :index
   end
 
   def index
