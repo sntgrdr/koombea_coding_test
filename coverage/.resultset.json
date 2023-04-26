@@ -1,32 +1,34 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/santirodriguez/Documents/koombea_coding_test/spec/models/user_spec.rb": {
+      "/Users/santirodriguez/Documents/koombea_coding_test/spec/devise/sign_in_spec.rb": {
         "lines": [
           null,
           null,
           1,
           null,
           1,
-          1,
-          2,
-          2,
+          3,
           2,
           null,
           1,
           1,
           1,
+          1,
+          1,
           null,
+          1,
+          1,
           null,
           null,
           1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
           null,
           null
         ]
@@ -657,8 +659,8 @@
           null,
           1,
           1,
-          2,
-          2,
+          5,
+          5,
           null,
           null
         ]
@@ -700,8 +702,79 @@
           1,
           null
         ]
+      },
+      "/Users/santirodriguez/Documents/koombea_coding_test/spec/devise/sign_up_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/santirodriguez/Documents/koombea_coding_test/spec/models/user_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/santirodriguez/Documents/koombea_coding_test/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/santirodriguez/Documents/koombea_coding_test/app/controllers/home_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1682470270
+    "timestamp": 1682470691
   }
 }
