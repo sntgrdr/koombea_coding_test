@@ -11,6 +11,11 @@
   </head>
 
   <body>
+    <div>
+      <%= link_to 'Pages', pages_path if user_signed_in? %>
+      <%= link_to "Sign out", destroy_user_session_path, method: :delete, data: { confirm: "Are you sure?" } if user_signed_in? %>
+      <%= link_to 'Sign In', new_user_session_path if !user_signed_in? %>
+    </div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
