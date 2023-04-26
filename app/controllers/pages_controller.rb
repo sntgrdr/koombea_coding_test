@@ -3,15 +3,17 @@
 class PagesController < ApplicationController
   before_action :authenticate_user!
   before_action :page, only: :show
-  before_action :pages, only: :index
 
   def new
     @page = Page.new
   end
 
   def create
-    ScrapingJob.perform_async(params[:url], current_user)
-    render :ok
+    ScrapingJob.perform_later(URI.parse(params[:url]).open.read, current_user)
+    redirect_to pages_path, notice: 'The page is being processed. Results will be available soon.'
+  rescue StandardError => e
+    flash[:error] = "There was an error processing the page: #{e.message}"
+    render :new
   end
 
   def index
@@ -19,7 +21,7 @@ class PagesController < ApplicationController
   end
 
   def show
-    page
+    @page
   end
 
   private
