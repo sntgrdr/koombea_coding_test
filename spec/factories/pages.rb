@@ -4,5 +4,6 @@ FactoryBot.define do
   factory :page do
     name  { Faker::Internet.domain_name }
     links { [Faker::Internet.url, Faker::Internet.url] }
+    user
   end
 end

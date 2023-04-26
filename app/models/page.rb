@@ -3,6 +3,8 @@
 class Page < ApplicationRecord
   belongs_to :user
 
+  validates :name, uniqueness: true
+
   scope :newest_first, -> { order(created_at: :desc) }
 
   serialize :links, JSON

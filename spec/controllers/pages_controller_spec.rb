@@ -14,18 +14,6 @@ RSpec.describe PagesController, type: :controller do
     sign_in current_user
   end
 
-  describe '#new' do
-    before { get :new }
-
-    it 'returns a success response' do
-      expect(response).to be_successful
-    end
-
-    it 'assigns a new page instance' do
-      expect(assigns(:page)).to be_a_new(Page)
-    end
-  end
-
   describe '#create' do
     subject { post :create, params: { url: 'https://news.ycombinator.com/' } }
 
@@ -40,7 +28,7 @@ RSpec.describe PagesController, type: :controller do
       it 'renders the new page and sets a flash error if there is an error processing the page' do
         allow(ScrapingJob).to receive(:perform_later).and_raise('Oops!')
         subject
-        expect(response).to render_template(:new)
+        expect(response).to render_template(:index)
         expect(flash[:error]).to eq('There was an error processing the page: Oops!')
       end
     end
